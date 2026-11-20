@@ -1,0 +1,10 @@
+* text=auto
+*.php text eol=lf
+/tests export-ignore
+/resources export-ignore
+/dist export-ignore
+/js/node_modules export-ignore
+/INSTALL-DE.md export-ignore
+/INSTALL-EN.md export-ignore
+/UPDATE-DE.md export-ignore
+/UPDATE-EN.md export-ignore
