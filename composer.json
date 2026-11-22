@@ -1,0 +1,61 @@
+{
+  "name": "el-choco/editorial",
+  "description": "Collaborative drafts, revision history and review before publishing a Flarum discussion.",
+  "type": "flarum-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "el-choco"
+    }
+  ],
+  "keywords": [
+    "flarum",
+    "drafts",
+    "collaboration",
+    "editorial",
+    "review"
+  ],
+  "require": {
+    "php": "^8.3",
+    "flarum/core": "^2.0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElChoco\\Editorial\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Editorial",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-pen-nib",
+        "backgroundColor": "#4d698e",
+        "color": "#ffffff"
+      },
+      "optional-dependencies": [
+        "flarum/markdown",
+        "fof/rich-text",
+        "fof/upload",
+        "fof/blog",
+        "linkrobins/wiki"
+      ]
+    }
+  },
+  "archive": {
+    "exclude": [
+      "/js/node_modules",
+      "/tests",
+      "/resources",
+      "/dist",
+      "/INSTALL-DE.md",
+      "/INSTALL-EN.md",
+      "/UPDATE-DE.md",
+      "/UPDATE-EN.md"
+    ]
+  },
+  "suggest": {
+    "fof/blog": "Publish Editorial manuscripts as blog articles.",
+    "linkrobins/wiki": "Publish Editorial manuscripts as wiki articles."
+  }
+}
